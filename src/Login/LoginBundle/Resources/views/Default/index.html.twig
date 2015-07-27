@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sign in &middot; Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="{{ asset('bundles/loginlogin//css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/loginlogin/css/bootstrap-responsive.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/loginlogin//css/parsley/parsley.css')}}" rel="stylesheet">
+    {% if erreur is defined %}
+        <div class="alert-info fade in">
+            <strong>{{ erreur }}</strong>
+        </div>
+    {% endif %}
+
+    {% block stylesheets %}
+    {% endblock %}
+
+</head>
+
+<body>
+
+{% block container %}
+{% endblock %}
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{{ asset('bundles/loginlogin/js/jquery.js')}}"></script>
+<script src="{{ asset('bundles/loginlogin/js/bootstrap.js')}}"></script>
+<script src="{{ asset('bundles/loginlogin/js/parsley/parsley.extend.min.js')}}"></script>
+<script src="{{ asset('bundles/loginlogin/js/parsley/parsley.min.js')}}"></script>
+<script src="{{ asset('bundles/loginlogin/js/parsley/parsley-standalone.min.js')}}"></script>
+
+
+{% block javascripts %}
+{% endblock %}
+
+</body>
+</html>

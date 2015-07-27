@@ -1,0 +1,18 @@
+{%  extends "LoginLoginBundle:Default:index.html.twig" %}
+{% block container %}
+    <div class="container">
+    <h2>Bienvenue Mr {#{{ name }}#}</h2>
+        <a href="{{ path('login_login_deconnexion') }}">Déconnexion</a>
+        <a href="{{ path('login_login_lister') }}">Lister les infos</a>
+
+        </div>
+
+</div> <!-- /container -->
+
+    {% if name is defined %}
+        <div class="alert-info fade in">
+            <h2>Bienvenue Mr (Mme){{ name }}</h2>
+        </div>
+    {% endif %}
+{% endblock %}
+

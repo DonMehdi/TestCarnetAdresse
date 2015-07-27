@@ -1,0 +1,20 @@
+{% extends "LoginLoginBundle:Default:index.html.twig" %}
+{% block container%}
+    <div class="container">
+        <form id="form" class="well" method="POST" action="{{ path('login_login_inscription') }}" data-validate="parsley">
+            <h2>Inscription</h2>
+            <label>Pseudonyme</label>
+            <input type="text" id="pseudonyme" name="pseudonyme" value="" class="input-xlarge" data-trigger="change" data-required="true" data-type="email">
+            <label>RetaperPseudonyme</label>
+            <input type="text"  id="pseudonymeRe"  name="pseudonymeRe" value="" class="input-xlarge" data-trigger="change" data-type="email" data-required="true" data-equalto="#pseudonyme" >
+            <label>Prenom</label>
+            <input type="text" name="prenom" class="input-xlarge" data-trigger="change" data-required="true" >
+            <label>MotDePasse</label>
+            <input type="password" name="motdepasse" class="input-xlarge" data-trigger="change" data-required="true" >
+            <div>
+                <button class="btn btn-primary" type="submit">Créer Compte</button>
+
+            </div>
+        </form>
+    </div>
+{% endblock %}

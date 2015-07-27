@@ -1,0 +1,15 @@
+login_login_homepage:
+    path:     /login
+    defaults: { _controller: LoginLoginBundle:Default:index }
+login_login_inscription:
+    path:     /inscription
+    defaults: { _controller: LoginLoginBundle:Default:inscription }
+
+login_login_deconnexion:
+        path:     /deconnexion
+        defaults: { _controller: LoginLoginBundle:Default:deconnexion }
+
+
+login_login_lister:
+        path:     /lister
+        defaults: { _controller: LoginLoginBundle:Default:lister }
